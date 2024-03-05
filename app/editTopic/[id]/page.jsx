@@ -1,4 +1,4 @@
-import EditTopicForm from "@/components/EditTopicForm";
+import EditFlowerForm from "@/components/EditFlowerForm";
 
 const getTopicById = async (id) => {
   try {
@@ -21,5 +21,5 @@ export default async function EditTopic({ params }) {
   const { topic } = await getTopicById(id);
   const { title, description } = topic;
 
-  return <EditTopicForm id={id} title={title} description={description} />;
+  return <EditFlowerForm id={id} title={title} description={description} />;
 }

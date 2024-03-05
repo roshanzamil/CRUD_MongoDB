@@ -1,5 +1,5 @@
-import TopicsList from "@/components/TopicsList";
+import FlowerList from "@/components/FlowerList";
 
 export default function Home() {
-  return <TopicsList />;
+  return <FlowerList />;
 }

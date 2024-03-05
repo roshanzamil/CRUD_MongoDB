@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 export default function RemoveBtn({ id }) {
   const router = useRouter();
-  const removeTopic = async () => {
+  const removeFlower = async () => {
     const confirmed = confirm("Are you sure?");
 
     if (confirmed) {
@@ -20,7 +20,7 @@ export default function RemoveBtn({ id }) {
   };
 
   return (
-    <button onClick={removeTopic} className="text-red-400">
+    <button onClick={removeFlower} className="text-red-400">
       <HiOutlineTrash size={24} />
     </button>
   );

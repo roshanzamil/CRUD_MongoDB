@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function AddTopic() {
+export default function addFlower() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
@@ -43,7 +43,7 @@ export default function AddTopic() {
         value={title}
         className="border border-slate-500 px-8 py-2"
         type="text"
-        placeholder="Topic Title"
+        placeholder="Flower Title"
       />
 
       <input
@@ -51,14 +51,14 @@ export default function AddTopic() {
         value={description}
         className="border border-slate-500 px-8 py-2"
         type="text"
-        placeholder="Topic Description"
+        placeholder="Flower Description"
       />
 
       <button
         type="submit"
-        className="bg-green-600 font-bold text-white py-3 px-6 w-fit"
+        className="bg-green font-bold text-white py-3 px-6 w-fit"
       >
-        Add Topic
+        Add Flower
       </button>
     </form>
   );

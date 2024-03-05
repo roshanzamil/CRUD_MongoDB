@@ -2,24 +2,24 @@ import Link from "next/link";
 import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
 
-const getTopics = async () => {
+const getFlowers = async () => {
   try {
     const res = await fetch("http://localhost:3000/api/topics", {
       cache: "no-store",
     });
 
     if (!res.ok) {
-      throw new Error("Failed to fetch topics");
+      throw new Error("Failed to fetch flowers");
     }
 
     return res.json();
   } catch (error) {
-    console.log("Error loading topics: ", error);
+    console.log("Error loading flowers: ", error);
   }
 };
 
-export default async function TopicsList() {
-  const { topics } = await getTopics();
+export default async function FlowerList() {
+  const { topics } = await getFlowers();
 
   return (
     <>
